@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sad Black Art Tattoo</title>
+	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/script.js">
+</head>
+<body>
+	<header>
+		<nav class="navbar">
+            <div class="container">
+              <a class="navbar-brand" href="#">Sad Black Art Tattoo</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Tattoos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Merchandise</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          
+	</header>
+	
+	<main>
+		<section id="about">
+			<h1>About Us</h1>
+			<p>Welcome to Sad Black Art Tattoo. We are the most underground studio in Odessa. We have been inking traditional tattoos for over 10 years. Ruslan Bauch is a talented craftsman and merchandise who is a highly qualified specialist, who is not limited to one style and produces excellent quality work in all styles. Our studio also employs talented artists who practice different styles and methods of tattooing. We are committed to providing sincere tattoos for our clients.</p>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/nRyU6W8p5cM" title="Video Tour of Our Studio" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</section>
+		
+		<section id="gallery">
+			<h1>Gallery</h1>
+			<div class="gallery">
+				<!-- тут будут изображения татуировок из галереи -->
+			</div>
+		</section>
+		
+		<section id="merch">
+			<h1>Merch</h1>
+			<div class="store">
+				<!-- тут будут изображения и описание товаров из магазина -->
+			</div>
+		</section>
+		
+		<section id="contact">
+			<h1>Contact Us</h1>
+			<form action="submit-form.php" method="post">
+				<label for="name">Name</label>
+				<input type="text" id="name" name="name" required>
+				
+				<label for="email">Email</label>
+				<input type="email" id="email" name="email" required>
+				
+				<label for="message">Message</label>
+				<textarea id="message" name="message" required></textarea>
+				
+				<button type="submit">Send</button>
+			</form>
+		</section>
+	</main>
+	
+	<footer>
+		<p>&copy; 2023 Sad Black Art Tattoo</p>
+	</footer>
+</body>
+</html>

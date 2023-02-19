@@ -1,0 +1,231 @@
+/* Reset styles */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* General styles */
+body {
+    background-color: #1d1d1d;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    margin: 1rem 0;
+}
+
+p {
+    margin-bottom: 1.5rem;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+/* Main header */
+.header {
+    background-color: #000;
+    padding: 2rem;
+}
+
+.header h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.header p {
+    font-size: 1.25rem;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+/* Portfolio section */
+.portfolio {
+    background-color: #2b2b2b;
+    padding: 4rem 0;
+}
+
+.portfolio h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.portfolio ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.portfolio li {
+    margin: 1rem;
+    flex-basis: calc(33.33% - 2rem);
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.3);
+}
+
+.portfolio li img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Store section */
+.store {
+    background-color: #000;
+    padding: 4rem 0;
+  }
+  
+  .store h2 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 2rem;
+  }
+  
+  .store p {
+    font-size: 1.25rem;
+    color: #fff;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+  }
+  
+  .store .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  
+  .store .tattoo {
+    width: 100%;
+    max-width: 340px;
+    margin-bottom: 2rem;
+  }
+  
+  .store .tattoo img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .store .tattoo .name {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-top: 1rem;
+  }
+  
+  .store .tattoo .price {
+    font-size: 1.25rem;
+    color: #fff;
+    margin-top: 1rem;
+  }
+  
+  .store .tattoo .btn {
+    display: inline-block;
+    background-color: #fff;
+    color: #000;
+    padding: 0.5rem 1rem;
+    font-size: 1.125rem;
+    border: none;
+    border-radius: 0.25rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .store .tattoo .btn:hover {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  @media (min-width: 768px) {
+    .store h2 {
+      font-size: 3rem;
+    }
+  
+    .store p {
+      font-size: 1.5rem;
+    }
+  
+    .store .tattoo {
+      width: calc(33.33% - 1rem);
+      margin-bottom: 2rem;
+    }
+  }
+  /* Navigation menu */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    padding: 1.5rem 0;
+    background-color: #222;
+    color: #fff;
+    font-size: 1.2rem;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .navbar .container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar .navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+  }
+  
+  .navbar .navbar-toggler {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  .navbar .navbar-toggler:focus {
+    outline: none;
+  }
+  
+  .navbar .navbar-toggler-icon {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url('../img/icons/burger-menu.svg') no-repeat center center;
+    background-size: contain;
+  }
+  
+  .navbar .navbar-toggler.active .navbar-toggler-icon {
+    background: url('../img/icons/close.svg') no-repeat center center;
+    background-size: contain;
+  }
+  
+  .navbar .navbar-collapse {
+    flex-grow: 0;
+    display: flex;
+    flex-basis: auto; 
